@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7C13935-6794-4E59-B4A1-01465CCE91F4}</ProjectGuid>
+    <RootNamespace>AyywareRemastered</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AWall.cpp" />
+    <ClCompile Include="Chams.cpp" />
+    <ClCompile Include="Controls.cpp" />
+    <ClCompile Include="DLLMain.cpp" />
+    <ClCompile Include="EngineClient.cpp" />
+    <ClCompile Include="ESP.cpp" />
+    <ClCompile Include="GameFuncs.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="Hacks.cpp" />
+    <ClCompile Include="HitMarker.cpp" />
+    <ClCompile Include="Hooks.cpp" />
+    <ClCompile Include="Interfaces.cpp" />
+    <ClCompile Include="LegitBot.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="NetVars.cpp" />
+    <ClCompile Include="Offsets.cpp" />
+    <ClCompile Include="Ragebot.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="SpamManager.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="Valve\CRC32.cpp" />
+    <ClCompile Include="Valve\MathFunctions.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ayywall.h" />
+    <ClInclude Include="BaseClient.h" />
+    <ClInclude Include="Chams.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Controls.h" />
+    <ClInclude Include="DLLMain.h" />
+    <ClInclude Include="EngineClient.h" />
+    <ClInclude Include="Entities.h" />
+    <ClInclude Include="ESP.h" />
+    <ClInclude Include="GameFuncs.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="GUISpecifications.h" />
+    <ClInclude Include="Hacks.h" />
+    <ClInclude Include="HitMarker.h" />
+    <ClInclude Include="Hooks.h" />
+    <ClInclude Include="Interfaces.h" />
+    <ClInclude Include="LegitBot.h" />
+    <ClInclude Include="LoaderInfo.h" />
+    <ClInclude Include="Materials.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="NetVars.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="RageBot.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="SDK.h" />
+    <ClInclude Include="SmallClasses.h" />
+    <ClInclude Include="SpamManager.h" />
+    <ClInclude Include="Surface.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="Valve\bspflags.h" />
+    <ClInclude Include="Valve\ClientRecvProps.h" />
+    <ClInclude Include="Valve\CRC32.h" />
+    <ClInclude Include="Valve\MathFunctions.h" />
+    <ClInclude Include="Valve\MiscDefinitions.h" />
+    <ClInclude Include="Valve\Vector.h" />
+    <ClInclude Include="Valve\Vector2D.h" />
+    <ClInclude Include="VFuncs.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
